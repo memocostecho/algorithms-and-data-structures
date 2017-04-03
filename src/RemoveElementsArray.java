@@ -29,7 +29,7 @@ public class RemoveElementsArray {
             curr++;
         }
 
-        for(int i =0; i<newSize; i++) {
+        for (int i = 0; i < newSize; i++) {
             System.out.println(array.get(i));
         }
 
@@ -38,7 +38,8 @@ public class RemoveElementsArray {
     }
 
     public static void main(String[] args) {
-        System.out.println(removeElement(new ArrayList<>(Arrays.asList(new Integer[]{4,1,1,2,1,3})), 1));;
+        System.out.println(removeElement(new ArrayList<>(Arrays.asList(new Integer[]{4, 1, 1, 2, 1, 3})), 1));
+        ;
     }
 
 }

@@ -1,6 +1,8 @@
 import java.math.BigInteger;
 
 /**
+ * Asked in trello exam
+ * <p>
  * Write code to find a 5 letter string of characters that contains only letters from
  * <p>
  * acdegilmnoprstuw
@@ -21,7 +23,7 @@ import java.math.BigInteger;
  * }
  * For example, if we were trying to find the 7 letter string where hash(the_string) was 680131659347, the answer would be "leepadg".
  */
-public class TrelloBruteForce {
+public class HashBruteForce {
 
     static int DESIRED_STRING_LENGTH = 5;
     static int DESIRED_HASH = 491454843;

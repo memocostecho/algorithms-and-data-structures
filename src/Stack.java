@@ -1,43 +1,43 @@
 /**
- * Created by yasminegutierrez on 8/30/15.
+ * Stack modeling
  */
 public class Stack<K> {
 
     private Node top;
 
 
-    public Stack(){
+    public Stack() {
 
     }
 
-    public void push(K newElement){
+    public void push(K newElement) {
 
-        if(top == null)
-            top = new Node(newElement,null);
-        else{
-            top = new Node(newElement,top);
+        if (top == null)
+            top = new Node<>(newElement, null);
+        else {
+            top = new Node<>(newElement, top);
         }
     }
 
 
-    public Node pop(){
+    public Node pop() {
 
-        if(top!=null){
+        if (top != null) {
             Node aux = top;
             top = top.getNext();
             return aux;
-        }else return null;
+        } else return null;
 
     }
 
-    public void printStack(){
+    public void printStack() {
 
         Node node = null;
 
-        if(top!=null)
-            node=top;
+        if (top != null)
+            node = top;
 
-        while (node!=null){
+        while (node != null) {
 
             System.out.println(node.getValue());
             node = node.getNext();

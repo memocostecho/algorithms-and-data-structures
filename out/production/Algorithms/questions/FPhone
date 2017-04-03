@@ -1,0 +1,55 @@
+Your photo-sharing app displays a system notification when the user receives a photo. Your app should display the photo when the user taps the notification. Which of the following do you need to attach to the Notification object that you pass to NotificationManager?
+
+An Activity reference
+A PendingIntent
+A BroadcastReceiver
+A FragmentTransaction
+
+If you nest a RelativeLayout inside a LinearLayout, what type of LayoutParams would that RelativeLayout accept?
+
+RelativeLayout.LayoutParams
+ViewGroup.MarginLayoutParams
+ViewGroup.LayoutParams
+LinearLayout.LayoutParams
+
+You’re writing a monitoring app that periodically checks if a website is up. Of those listed below, what is the BEST way to schedule these periodic checks?
+
+A. Register a WakeLock with PowerManager
+Call setInexactRepeating on AlarmManager
+Post to a Handler with postDelayed
+Call setPeriodicTimer on TimerService
+
+You want to trigger an animation half a second after a user taps a button. The BEST way to do this is to:
+
+Call Timer.schedule and pass the animation as a TimerTask
+Call Thread.sleep in the button’s ClickListener’s onClick method
+Call postDelayed on the appropriate Handler
+Call setInterval on an Alarm created with AlarmManager
+
+Which one of the following is true by default of a Service declared in your manifest?
+
+It runs in the UI thread
+It comes with an associated Thread for background execution.
+It’s automatically initialized when you start your app.
+You can only configure it to communicate with the process in which it was started.
+
+You want your messaging app to appear as an option in the intent chooser when a user shares content in another application. To do this, you MUST do which of the following?
+
+Create an IntentService in your Application object to listen to the SENT_MESSAGE intent
+Register a Broadcast Receiver in your manifest to receive BROADCAST_SMS
+Register a ContentObserver to listen to writes to Telephony.Sms.Inbox.
+Register an intent filter for ACTION_SEND in your manifest.
+
+Which of the following is NOT a good way to improve scrolling performance in a ListView?
+
+Adding hardwareAccelerated=true to the ListView declaration in your manifest
+Reducing findViewById calls with the ViewHolder pattern
+Reducing cell layout complexity
+Reusing views passed to Adapter.getView
+
+Your app has a list of restaurants including their names and phone numbers. What’s the BEST way to store and expose this data to other applications so that they can see the names, not see the phone numbers, and can't edit either?
+
+Store in a file in internal storage, expose to other apps via RPC via IBinder transactions
+Store in a SQLite database in external storage, expose specific tables and columns via CREATE VIEW
+Store in SharedPreferences, share via SharedPreferences.
+Store in a SQLite database in internal storage, expose specific tables and columns via a ContentProvider

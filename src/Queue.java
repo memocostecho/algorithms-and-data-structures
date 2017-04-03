@@ -1,5 +1,5 @@
 /**
- * Created by yasminegutierrez on 8/30/15.
+ * Queue model
  */
 public class Queue<K> {
 
@@ -7,23 +7,20 @@ public class Queue<K> {
     private Queue head;
 
 
+    public Queue() {
+    }
 
-    public Queue(){
+
+    public void enqueue(K newElement) {
 
 
     }
 
 
-    public void enqueue(K newElement){
+    public K dequeue() {
 
 
-    }
-
-
-    public K dequeue(){
-
-
-        return (K)this.head.data;
+        return (K) this.head.data;
     }
 
 }
